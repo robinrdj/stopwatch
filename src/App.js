@@ -9,7 +9,7 @@ function App() {
   function formatTime(time){
     let mins = Math.floor(time/60);
     let secs = time%60;
-    return `${mins}:${secs}`;
+    return `${mins}:${secs<10?"0":""}${secs}`;
   }
   function handleStart(){
     if(isRunning){
@@ -39,7 +39,7 @@ function App() {
       <button onClick={handleStart}>{isRunning?"stop":"start"}</button>
       <button onClick = {handleReset}>reset</button>
     </div>
-    
+
   );
 }
 

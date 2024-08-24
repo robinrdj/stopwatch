@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <h3>StopWatch
+      <h3>Stopwatch
       </h3>
       <p>Time: {formatTime(time)}</p>
       <button onClick={handleStart}>{isRunning?"Stop":"Start"}</button>
